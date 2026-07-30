@@ -13,7 +13,7 @@ function ProductList(props) {
 
   // Fetch products from backend
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/api/products")
+    fetch("https://smartcart-xbad.onrender.com/api/products")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.log(err));
